@@ -1,0 +1,91 @@
+import math
+
+
+#cw1 a
+print('cw1 a 1')
+n = 5.34
+print(n)
+#1
+print(round(n), math.ceil(n), math.floor(n))
+#2
+print('cw1 a 2')
+a = 6.756
+b = 5.66
+
+if not isinstance(a, int) or not isinstance(b, int):
+    print(math.fmod(a, b))
+else:
+    print(a%b)
+
+print('cw1 a 3')
+#3
+def log():
+    x = 5
+    n = 7
+    for i in range (1, n+1):
+        if i == 1:
+            continue
+        print(math.log(x, i), ' | ', end=' ')
+
+log()
+#4
+
+print("\n cw1 a 4")
+def e():
+    a = 5
+    print(math.exp(a))
+    print(math.e**a)
+    print(math.pow(math.e, a))
+
+e()
+
+print('cw1 b 1')
+
+print(-2**2)
+print(math.pow(-2, 2))
+
+print('cw1 b 2')
+
+print(-4%3)
+print(math.remainder(-4, 3))
+
+print('cw1 b 3')
+
+y = 5
+
+fs = math.sinh(y)
+ws = (math.exp(y) - math.exp(-y))/2
+
+fc = math.cosh(y)
+wc = (math.exp(y) + math.exp(-y))/2
+
+print('dla sinh: ', math.isclose(fs, ws))
+print('dla cosh: ', math.isclose(fc, wc))
+
+------------------------------------------------------
+
+print('cw2 a ')
+
+zdanie1 = 'yrhdfgsergdgjsdn,gjhskgjseg'
+zdanie2 = 'gsdgsrldgjsd;lfghlsd'
+
+print('12 znak - "', zdanie1[12], '"')
+print(zdanie1+zdanie2)
+print('dlugosc z1 - ', len(zdanie1))
+
+owoce = "jablko,banan,gruszka"
+print(owoce.split(','))
+
+print('cw2 b')
+n=5
+print(zdanie1[::2])
+print(zdanie1[(len(zdanie1)-n):])
+print(zdanie1[::-1])
+
+if len(zdanie1)>len(zdanie2):
+    print('zdanie1 jest dluzsze')
+else:
+    print('zdanie2 jest dluzsze')
+
+txt = "My name is {0} . My date of birth is {1} .".format("Matison", "21.02.2003")
+print(txt)
