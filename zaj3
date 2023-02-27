@@ -1,5 +1,5 @@
 st = {"Polska", "Niemcy", "Slowacja", "Turcja", "Francja"}
-nd = {"RPA", "Kongo", "Madagaskar", "Niemcy"}
+nd = {"RPA", "Kongo", "Niemcy"}
 rd = {"Polska", "Niemcy", "Madagaskar", "USA", "Kanada"}
 print(st)
 st.add("Wlochy")
@@ -13,3 +13,12 @@ inter = st.intersection(nd, rd) #czesc wspolna
 print(inter)
 diff = st.difference(nd) #roznica
 print(diff)
+tab = [1,2,3]
+kr = (1, "str", 1.432, 1j, False, nd, tab )
+print(kr)
+#kr[2] = 2137
+print(kr[3])
+print(kr[3], kr[4], kr[5])
+print(kr[::2])
+
+
