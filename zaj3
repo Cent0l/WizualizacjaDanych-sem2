@@ -1,0 +1,15 @@
+st = {"Polska", "Niemcy", "Slowacja", "Turcja", "Francja"}
+nd = {"RPA", "Kongo", "Madagaskar", "Niemcy"}
+rd = {"Polska", "Niemcy", "Madagaskar", "USA", "Kanada"}
+print(st)
+st.add("Wlochy")
+print(st)
+print("czy Polska jest?", "Polska" in st)
+st.remove("Wlochy")
+print(st)
+sm = st.union(nd, rd)   #suma
+print(sm)
+inter = st.intersection(nd, rd) #czesc wspolna
+print(inter)
+diff = st.difference(nd) #roznica
+print(diff)
