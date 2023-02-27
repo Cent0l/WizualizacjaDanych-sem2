@@ -1,0 +1,77 @@
+def my_function():
+    print("Witaj świecie!")
+
+
+my_function()
+
+d = 2 + 3
+e = 8 - 3
+
+print(d, e)
+print(4 / 2)
+print(3 / 2)
+
+f = 5 * 3
+print(f)
+
+print(3 < 2)
+print(3 != 4)
+
+g = 3 ** 5
+h: float = 9 ** (1 / 2)
+
+print(g, ", ", h)
+
+
+def my_function2() -> object:
+    a = 2.5
+    b = 3
+    c = 6
+
+    print(a * c, b / b, b-c)
+
+
+my_function2()
+
+---------------------------------------------------------------------------
+import math
+
+var1: int = 2
+var2: int = 3
+var1 += 2
+var3 = var1
+var1 *= 3
+var4 = var1 / var2
+
+print(var1, var2, var3, var4)
+var4 /= 2
+print('var4 = ', var4)
+# 6a
+n = int(input('Podaj liczbe: '))
+if 0 < n and n > 100:
+    print('nie jest liczba mniedzy 0 a 100')
+else:
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            print(i, ' * ', j, ' = ', i * j)
+
+
+# 6c
+def c1():
+    n = int(input('Podaj liczbe: '))
+    e1 = (1 + (1 / n)) ** n
+    print(e1)
+
+
+c1()
+
+
+def c2():
+    m = int(input('Podaj liczbe:'))
+    e2 = 0
+    for k in range(0, m + 1):
+        e2 = e2 + (1 / math.factorial(k))
+    print(e2)
+
+
+c2()
