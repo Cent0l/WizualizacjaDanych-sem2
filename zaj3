@@ -9,7 +9,7 @@ listfac=[math.factorial(i) for i in range(21)]
 print(listfac)
 liste=[math.e**i for i in range(21)]
 print(liste)
-names=["Mateusz","Karol","Bartosz"]
+imie=["Mateusz","Karol","Bartosz"]
 nazwisko=["Centol","Lubel","Koperkov"]
 #1
 dl=[len(nazwisko[i]) for i in range(len(nazwisko))]
@@ -25,28 +25,15 @@ def numer(month_name):
 print(mon2)
 mon2.sort(key=numer)
 print(mon2)
-def filter_names(names, letter):
-    filtered_names = [name for name in names if name[0] > letter]
-    return filtered_names
-def filter_long_names(names):
-    filtered_names = [name for name in names if len(name) > 4]
-    return filtered_names
-
-letter = 'B'
-
-print(filter_names(names,letter))
-
-
-
-
-print(filter_long_names(names))
-
-
-
-
-
-
-
+literka="C"
+def filtr(imie, litera):
+    pofiltr = [i for i in imie if i[0] > litera]
+    return pofiltr
+def filtrdl(imie):
+    pofiltr = [i for i in imie if len(i) > 6]
+    return pofiltr
+print(filtrdl(imie))
+print(filtr(imie,literka))
 
 st = {"Polska", "Niemcy", "Slowacja", "Turcja", "Francja"}
 nd = {"RPA", "Kongo", "Niemcy"}
